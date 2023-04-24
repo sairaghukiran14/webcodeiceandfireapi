@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  background: url("back.jpeg");
+  background-size: cover;
+}
+#books {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.book {
+  text-align: center;
+  width: 250px;
+
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  /* Glassmorphism Code Snippet */
+
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.searchbar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.searchbar input {
+  padding: 10px 20px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px lightgray;
+  border: none;
+}
+.auth {
+  padding: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+.character {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.book .namee {
+  font-weight: 600;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid white;
+}
+.char {
+  font-size: 15px;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
