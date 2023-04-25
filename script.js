@@ -73,8 +73,10 @@ function search() {
   var filter = input.value.toUpperCase();
   var book = books.getElementsByClassName("book");
   for (i = 0; i < book.length; i++) {
+    let re = new RegExp(input.value, "i");
     var a = book[i].getElementsByClassName("namee")[0];
     var txtValue = a.textContent || a.innerText;
+    a.innerHTML = a.textContent.replace(re, "<b>$&</b>");
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
       book[i].style.display = "";
     } else {
