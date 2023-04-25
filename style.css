@@ -14,6 +14,10 @@ html {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+b {
+  background-color: orangered;
+}
+
 .book {
   text-align: center;
   width: 250px;
